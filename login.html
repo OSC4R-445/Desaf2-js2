@@ -9,7 +9,7 @@
         crossorigin="anonymous">
 </head>
 
-<body style="padding: 50px; background-image: linear-gradient(to left, #1ba5cb, #008ccb, #1271c4, #4f50af, #70228c); color: white; font-weight: bold;">
+<body style="padding: 50px; background-image: linear-gradient(to left, #1ba5cb, #008ccb, #1271c4, #4f50af, #70228c); color: white; font-weight: bold;" onload="window.moveTo(`${screen.availWidth/2}`,0);">
     <form>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo</label>
@@ -25,12 +25,14 @@
             <label class="form-check-label" for="exampleCheck1">Recordar Sesion?</label>
         </div>
         <button type="submit" class="btn btn-primary">Ingresar</button>
+        <button onclick="window.close()">Cerrar</button>
+        <button onclick="window.opener.location=`https://app.cadif1.com/`">Redireccionar</button>
     </form>
 
 
     <!-- SCRIPT SOLUCION DESAFIO -->
     <script>
-    
+
     </script>
     <!-- FIN SCRIPT SOLUCION DESAFIO -->
 

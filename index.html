@@ -54,17 +54,17 @@
         cursor: pointer;
     }
 </style>
-<body >
+<body onclick="cambioDeFondo(event)">
     <header>
         <h1>AvilaPro</h1>
         <nav>
             <ul>
-                <li>Iniciar Sesión</li>
+                <li onclick="new4terSizedWindow(event)">Iniciar Sesión</li>
                 <li>Regístrate</li>
             </ul>
         </nav>
     </header>
-    <div id="btnSubir" >
+    <div id="btnSubir" onclick="upScroll(event)">
         <ion-icon name="arrow-up"></ion-icon>
     </div>
     <main>
@@ -77,14 +77,18 @@
     </main>
 
     <!-- SCRIPTS SOLUCION DEL DESAFIO -->
-    <script>
-       
-    </script>
+
+    <!-- SCRIPTS JS -->
+    <script src="./JavaScript/upPagButton.js"></script> 
+    <script src="./JavaScript/bodyColorChange.js"></script>
+    <script src="./JavaScript/newQuarterWindow.js"></script>
     <!--FIN SCRIPTS SOLUCION DEL DESAFIO -->   
 
 
     <!-- SCRIPTS DE IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 </body>
 </html>
